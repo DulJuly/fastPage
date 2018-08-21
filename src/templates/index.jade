@@ -1,0 +1,10 @@
+extends layout/defaultLayout
+
+block title
+  title new title
+
+block content
+  h1 title here
+  - const pets = ['dog', 'cat', 'panda', 'bird', 'pig']
+  each pet in pets
+    p #{pet}
